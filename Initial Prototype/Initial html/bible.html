@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>FaithFocusHub</title>
+    <link rel="stylesheet" href="../css/bible.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // loads saved notes from local storage
+            loadNotes();
+
+            // adds event listener for the save button
+            document.getElementById("saveButton").addEventListener("click", saveNotes);
+        });
+
+        function loadNotes() {
+            for (let i = 1; i <= 16; i++) {
+                const note = localStorage.getItem(`micah1_${i}`);
+                if (note !== null) {
+                    document.getElementById(`verse${i}`).value = note;
+                }
+            }
+        }
+
+        function saveNotes() {
+            for (let i = 1; i <= 16; i++) {
+                const note = document.getElementById(`verse${i}`).value;
+                localStorage.setItem(`micah1_${i}`, note);
+            }
+            alert("Notes saved!");
+        }
+    </script>
+
+</head>
+
+<body>
+<section id="banner">
+    <a href="../html/index.html"><img src="../images/logo.png" class="logo"></a> 
+    
+    <!-- Search bar function -->
+<form class="search">
+    <input type="search" placeholder="Search...">
+</form>
+    <div class="banner-text">
+        <h1>Faith Focus Hub</h1>
+    </div>
+
+</section>
+
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="../html/index.html">HOME</a></li>
+            <li><a href="../html/bible.html">BIBLE</a></li>
+            <li><a href="../html/study.html">STUDY OPTIONS</a></li>
+            <li><a href="../html/about.html">ABOUT</a></li>
+            <li><a href="../html/login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="../images/menu.png" id="menu">
+</div>
+
+
+<div id="result">
+    <strong>Micah 1</strong><br>
+    <p id="verse1">1 The word of the Lord that came to Micah of Moresheth during the reigns of Jotham, Ahaz, and Hezekiah, kings of Judah—the vision he saw concerning Samaria and Jerusalem.
+                <textarea id="verse1" rows="4" cols="50"></textarea>
+    </p>
+    <p>2 Hear, you peoples, all of you, listen, earth and all who live in it, that the Sovereign Lord may bear witness against you, the Lord from his holy temple.</p>
+    <p>3 Look! The Lord is coming from his dwelling place; he comes down and treads on the heights of the earth.</p>
+    <p>4 The mountains melt beneath him and the valleys split apart, like wax before the fire, like water rushing down a slope.</p>
+    <p>5 All this is because of Jacob’s transgression, because of the sins of the people of Israel. What is Jacob’s transgression? Is it not Samaria? What is Judah’s high place? Is it not Jerusalem?</p>
+    <p>6 Therefore I will make Samaria a heap of rubble, a place for planting vineyards. I will pour her stones into the valley and lay bare her foundations.</p>
+    <p>7 All her idols will be broken to pieces; all her temple gifts will be burned with fire; I will destroy all her images. Since she gathered her gifts from the wages of prostitutes, as the wages of prostitutes they will again be used.”</p>
+    <p>8 Because of this I will weep and wail; I will go about barefoot and naked. I will howl like a jackal and moan like an owl.</p>
+    <p>9 For Samaria’s plague is incurable; it has spread to Judah. It has reached the very gate of my people, even to Jerusalem itself.</p>
+    <p>10 Tell it not in Gath; weep not at all. In Beth Ophrah roll in the dust.</p>
+    <p>11 Pass by naked and in shame, you who live in Shaphir. Those who live in Zaanan will not come out. Beth Ezel is in mourning; it no longer protects you.</p>
+    <p>12 Those who live in Maroth writhe in pain, waiting for relief, because disaster has come from the Lord, even to the gate of Jerusalem.</p>
+    <p>13 You who live in Lachish, harness the team to the chariot. You were the beginning of sin to Daughter Zion, for the transgressions of Israel were found in you.</p>
+    <p>14 Therefore you will give parting gifts to Moresheth Gath. The town of Akzib will prove deceptive to the kings of Israel.</p>
+    <p>15 I will bring a conqueror against you who live in Mareshah. The nobles of Israel will flee to Adullam.</p>
+    <p>16 Shave your head in mourning for the children in whom you delight; make yourself as bald as the vulture, for they will go from you into exile.</p>
+</div>
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right = "-250px"
+    
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "../images/x.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "images/menu.png";
+        }
+    }
+    
+    </script>   
+
+    </body>
+    </html>
