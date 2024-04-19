@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Study Website - Register</title>
+  <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="../html/index2.html"><img src="../images/logo.png" class="logo"></a> 
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../html/index2.html">Home</a></li>
+            <li><a href="../html/about2.html">About</a></li>
+            <li><a href="../html/bible2.html">Bible</a></li>
+            <li><a href="../html/resources.html">Resources</a></li>
+            <li><a href="../php/login2.php">Login</a></li>
+            <li><a href="../admin/admin_login.php">Admin Login</a></li>
+
+          </ul>
+    </nav>
+  </header>
+
+  <main1>
+    <section class="auth-form">
+      <h2>Register</h2>
+      <form action="../php/process-signup2.php" method="post" novalidate>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required>
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name ="password" placeholder="Enter a password" required>
+        </div>
+        <div>
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name ="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="../html/login2.html">Login here</a></p>
+    </section>
+  </main1>
+
+  <footer>
+    <p>&copy; 2024 FaithFocusHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

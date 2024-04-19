@@ -1,0 +1,66 @@
+{
+    "books": [
+      {
+        "name": "Genesis",
+        "chapters": [
+          {
+            "chapter": 1,
+            "verses": [
+              {
+                "verse": 1,
+                "text": "In the beginning God created the heavens and the earth."
+              },
+              {
+                "verse": 2,
+                "text": "The earth was without form, and void; and darkness was on the face of the deep. And the Spirit of God was hovering over the face of the waters."
+              }
+            ]
+          },
+          {
+            "chapter": 2,
+            "verses": [
+              {
+                "verse": 1,
+                "text": "Thus the heavens and the earth, and all the host of them, were finished."
+              },
+              {
+                "verse": 2,
+                "text": "And on the seventh day God ended His work which He had done, and He rested on the seventh day from all His work which He had done."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exodus",
+        "chapters": [
+          {
+            "chapter": 1,
+            "verses": [
+              {
+                "verse": 1,
+                "text": "Now these are the names of the children of Israel who came to Egypt; each man and his household came with Jacob:"
+              },
+              {
+                "verse": 2,
+                "text": "Reuben, Simeon, Levi, and Judah;"
+              }
+            ]
+          },
+          {
+            "chapter": 2,
+            "verses": [
+              {
+                "verse": 1,
+                "text": "And a man of the house of Levi went and took as wife a daughter of Levi."
+              },
+              {
+                "verse": 2,
+                "text": "So the woman conceived and bore a son. And when she saw that he was a beautiful child, she hid him three months."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
