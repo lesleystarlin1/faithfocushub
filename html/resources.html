@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - FaithFocusHub</title>
+    <link rel="stylesheet" href="../css/resource.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="../html/index2.html"><img src="../images/logo.png" class="logo"></a> 
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../html/index2.html">Home</a></li>
+                <li><a href="../html/about2.html">About</a></li>
+                <li><a href="../html/bible2.html">Bible</a></li>
+                <li><a href="../html/resources.html">Resources</a></li>
+                <li><a href="../php/login2.php">Login</a></li>
+                <li><a href="../admin/admin_login.php">Admin Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="resources">
+            <ul>
+                    <h1>Study Methods</h1>
+                    <p>This consist of our main bible study structures to help read and understand the bible.</p>
+                    <ul>
+                      <li><a href="#" onclick="showLoginPopup()">SOAP method</a></li>
+                      <li><a href="#" onclick="showLoginPopup()">GROW method</a></li>
+                      <li><a href="#" onclick="showLoginPopup()">Topical method</a></li>
+                    </ul>
+                    
+                     </ul>
+            </ul>
+        </section>
+
+        <section class="study-methods">
+            <ul>
+                    <h1>Commentaries</h1>
+                    <p>This consist of our main bible study structures to help read and understand the bible.</p>
+                    <ul>
+                      <li><a href="../user/comm.php" onclick="">Expository</a></li>
+                      <li><a href="../user/comm.php" onclick="">Devotional</a></li>
+                      <li><a href="../user/comm.php" onclick="">Theological</a></li>
+                      <li><a href="../user/comm.php" onclick="">Cultural</a></li>
+
+                    </ul>
+            </ul>
+        </section>
+
+        <section class="rec">
+            <ul>
+                    <h1>Recommendations</h1>
+                    <p>This consist of FaithFocusHub highly recommended sources.</p>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="../html/recommendations.html" class="dropbtn">Books</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="../html/recommendations.html" class="dropbtn">Podcasts</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="../html/recommendations.html" class="dropbtn">Sermons</a>
+                        </li>
+                    </ul>
+            
+            </ul>
+        </section>
+
+        <section class="open">
+            <ul>
+                    <h1>Open Discussion</h1>
+                    <p>This consist of discussions of scriptures.</p>
+                    <ul>
+                      <li><a href="#" onclick="showLoginPopup()">Discuss with others</a></li>
+                    </ul>
+            </ul>
+        </section>
+      
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 FaithFocusHub</p>
+    </footer>
+
+    <!-- login popup -->
+    <div id="loginPopup">
+        <h2>Login Required</h2>
+        <p>Please log in to access this feature.</p>
+        <button onclick="hideLoginPopup()">Close</button>
+        <a href="../html/login2.html">Go to Login</a>
+
+    </div>
+
+    <script src="../js/script2.js"></script>
+    <script>
+        // javaScript functions for the login popup
+        function showLoginPopup() {
+            document.getElementById('loginPopup').style.display = 'block';
+        }
+
+        function hideLoginPopup() {
+            document.getElementById('loginPopup').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
